@@ -21,11 +21,10 @@
 \setlength{\itemsep}{0pt}
 \pagestyle{empty}
 \raggedbottom
-\definecolor{mycolor}{RGB}{18,57,155}
-\definecolor{urlcolor}{RGB}{115,191,239}
+\definecolor{urlcolor}{RGB}{51,102,187}
 \hypersetup{
     colorlinks=true,
-    linkcolor=urlcolor,
+    linkcolor=blue,
     filecolor=magenta,      
     urlcolor=urlcolor,
 }
@@ -34,7 +33,7 @@
 %---------------------------------------------------------------------------
 % Customize section headers
 \titleformat{\section}
-  {\vspace{-6pt}\large\scshape\color{mycolor}}
+  {\vspace{-6pt}\large\scshape}
   {}{0em} 
   {}
   [\titlerule]
@@ -63,19 +62,10 @@
 %---------------------------------------------------------------------------
 % New commands
 \newcommand{\name}[1]{%
-  \centerline{\Large\color{mycolor}\bf{#1}}%
+  \centerline{\Large\bf{#1}}%
 }
 \newcommand{\contact}[3]{%
   \begin{center}
   #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
   \end{center}%
-}
-\newcommand{\datedsection}[2]{%
-  \section[#1]{#1 \hfill #2}%
-}
-\newcommand{\datedsubsection}[2]{%
-  \subsection[#1]{#1 \hfill #2}%
-}
-\newcommand{\titlesubsection}[3]{%
-  \subsection[#1]{#1, \textit{#2} \hfill #3}%
 }
